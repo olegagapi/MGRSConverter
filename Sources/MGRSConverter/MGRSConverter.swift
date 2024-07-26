@@ -3,7 +3,7 @@
 
 import CoreLocation
 
-extension CLLocationCoordinate2D {
+public extension CLLocationCoordinate2D {
     func toMgrs() -> Mgrs? {
         return try? LatLon(lat: latitude, lon: longitude).toUTM().toMGRS()
     }
