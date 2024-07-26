@@ -5,4 +5,7 @@ The math and theory for the conversions between Latitude/Longitude, UTM, and MGR
 The first unpublished iteration of this was a simple translation of the JavaScript provided to Swift.
 Subsequent iterations have evolved into packaging the math within into a more useable iOS interface.
 
-The next branch of this project will focus on offline map areas.
+##Usage:
+
+    let mgrs = CLLocationCoordinate2D(latitude: 50.45, longitude: 30.523333).toMgrs()
+    print(mgrs.toString())
